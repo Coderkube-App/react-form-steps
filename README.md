@@ -3,7 +3,7 @@
 A premium, production-ready multi-step form manager for **React** & **React Native**. Built on top of `react-hook-form` and `zod`, it handles complex data flows, file persistence, draft recovery, and smooth animations — all with zero configuration.
 
 [![npm version](https://img.shields.io/npm/v/react-form-steps.svg)](https://www.npmjs.com/package/react-form-steps)
-[![license](https://img.shields.io/npm/l/react-form-steps.svg)](https://github.com/yourusername/react-form-steps/blob/main/LICENSE)
+[![license](https://img.shields.io/npm/l/react-form-steps.svg)](https://github.com/Coderkube-App/react-multistep-form/blob/main/LICENSE)
 
 ---
 
@@ -13,7 +13,7 @@ A premium, production-ready multi-step form manager for **React** & **React Nati
 
 <p align="center">
   <a href="https://github.com/user-attachments/assets/c555b874-a716-47b7-9474-c24daa24f09f">
-    <img src="assets/cli_screenshot.png" alt="Watch react-form-steps CLI Demo Video" width="800" style="border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);" />
+    <img src="https://raw.githubusercontent.com/Coderkube-App/react-multistep-form/main/assets/cli_screenshot.png" alt="Watch react-form-steps CLI Demo Video" width="800" style="border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);" />
   </a>
   <br />
   <sub>🎬 <b>Click the terminal preview above to watch the interactive CLI setup demo!</b></sub>

@@ -1,6 +1,6 @@
 {
   "name": "react-form-steps",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A production-ready multi-step form manager for React with persistence and edit mode support.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -44,8 +44,16 @@
     "persistence",
     "draft"
   ],
-  "author": "Antigravity",
+  "author": "CoderKube Technologies",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Coderkube-App/react-multistep-form.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Coderkube-App/react-multistep-form/issues"
+  },
+  "homepage": "https://github.com/Coderkube-App/react-multistep-form#readme",
   "dependencies": {
     "lodash.debounce": "^4.0.8",
     "lucide-react": "^0.363.0"
