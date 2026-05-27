@@ -1,0 +1,5 @@
+# Enforce Unix LF line endings for CLI binary source and dist files to prevent shebang compilation failures on Linux/macOS
+src/cli.ts eol=lf
+dist/cli.js eol=lf
+bin/* eol=lf
+*.sh eol=lf

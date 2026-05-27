@@ -1,23 +1,3 @@
-# Dependencies
-node_modules/
-.pnp
-.pnp.js
-
-# Build outputs
-dist/
-build/
-*.tsbuildinfo
-
-# Coverage reports
-coverage/
-html-report/
-
-# Environment variables
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
 # Logs
 logs
 *.log
@@ -143,6 +123,7 @@ dist
 .tern-port
 
 # Stores VSCode versions used for testing VSCode extensions
+.vscode-test
 
 # pnpm
 .pnpm-store
@@ -188,27 +169,19 @@ Thumbs.db
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
 
-# IDE
-.idea/
+# Coverage
+coverage/
 
-# OS files
-.DS_Store
-Thumbs.db
+# TypeScript cache
+*.tsbuildinfo
 
-# Package manager
-package-lock.json
-yarn.lock
-pnpm-lock.yaml
+# Package lock (optional - remove if you want to track it)
+# package-lock.json
 
-# Optional demo app
-demo/node_modules/
-demo/dist/
-
-# Turbo / cache
-.turbo/
-.cache/
-*.tgz
-branch_structure.json
-.vscode
+# Demos
+demos/
+public/
+# Demos (ignore all except TestKeyboardBare)
+demos/*
+!demos/TestKeyboardBare/
