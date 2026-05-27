@@ -73,7 +73,7 @@
     <div class="dot dot-red"></div>
     <div class="dot dot-yellow"></div>
     <div class="dot dot-green"></div>
-    <span class="titlebar-text">Terminal — npx react-multistep-form</span>
+    <span class="titlebar-text">Terminal — npx react-form-steps</span>
   </div>
   <div class="content" id="output"></div>
 </div>
@@ -93,7 +93,7 @@ const BANNER = `<span class="cyan bold">  ███████╗ ████�
 `;
 
 const steps = [
-  { type: 'typeCommand', text: 'npx react-multistep-form', delay: 60 },
+  { type: 'typeCommand', text: 'npx react-form-steps', delay: 60 },
   { type: 'instant', text: '\n' + BANNER + '\n', delay: 600 },
   { type: 'select', question: 'Select Platform Structure:', options: ['Web (React)', 'React Native (Mobile)', 'None (Cancel)'], selected: 0, delay: 1200 },
   { type: 'select', question: 'Select Programming Language:', options: ['JavaScript (.js / .jsx)', 'TypeScript (.ts / .tsx)'], selected: 1, delay: 1000 },
@@ -104,7 +104,7 @@ const steps = [
   { type: 'instant', text: '<span class="green">⏳ Generating form-steps scaffolding...</span>\n', delay: 1200 },
   { type: 'instant', text: '\n<span class="green bold">✔ Scaffolding created successfully inside folder: ./form-steps !</span>\n', delay: 400 },
   { type: 'instant', text: '\n<span class="bold white">Next steps to render: </span>\n  Import and render it in your App Component:\n  <span class="cyan">import { FormStepsWizard } from \'./form-steps\';</span>\n', delay: 400 },
-  { type: 'instant', text: '\n<span class="green">Enjoy using react-multistep-form CLI! 🎉</span>\n', delay: 100 },
+  { type: 'instant', text: '\n<span class="green">Enjoy using react-form-steps CLI! 🎉</span>\n', delay: 100 },
 ];
 
 let html = '';

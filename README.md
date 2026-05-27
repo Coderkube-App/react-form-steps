@@ -1,26 +1,26 @@
-# 🚀 react-multistep-form
+# 🚀 react-form-steps
 
 A premium, production-ready multi-step form manager for **React** & **React Native**. Built on top of `react-hook-form` and `zod`, it handles complex data flows, file persistence, draft recovery, and smooth animations — all with zero configuration.
 
-[![npm version](https://img.shields.io/npm/v/react-multistep-form.svg)](https://www.npmjs.com/package/react-multistep-form)
-[![license](https://img.shields.io/npm/l/react-multistep-form.svg)](https://github.com/yourusername/react-multistep-form/blob/main/LICENSE)
+[![npm version](https://img.shields.io/npm/v/react-form-steps.svg)](https://www.npmjs.com/package/react-form-steps)
+[![license](https://img.shields.io/npm/l/react-form-steps.svg)](https://github.com/yourusername/react-form-steps/blob/main/LICENSE)
 
 ---
 
 ## 💻 Interactive CLI Scaffolding
 
-`react-multistep-form` ships with a powerful interactive CLI that generates complete multi-step wizard forms in seconds. No boilerplate — just answer a few questions and start building.
+`react-form-steps` ships with a powerful interactive CLI that generates complete multi-step wizard forms in seconds. No boilerplate — just answer a few questions and start building.
 
 <p align="center">
-  <a href="https://github.com/user-attachments/assets/72849e82-257e-4af6-b740-3cb0a731fd63">
-    <img src="assets/cli_screenshot.png" alt="Watch react-multistep-form CLI Demo Video" width="800" style="border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);" />
+  <a href="https://github.com/user-attachments/assets/c555b874-a716-47b7-9474-c24daa24f09f">
+    <img src="assets/cli_screenshot.png" alt="Watch react-form-steps CLI Demo Video" width="800" style="border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);" />
   </a>
   <br />
   <sub>🎬 <b>Click the terminal preview above to watch the interactive CLI setup demo!</b></sub>
 </p>
 
 ```bash
-npx react-multistep-form
+npx react-form-steps
 ```
 
 The CLI walks you through:
@@ -67,7 +67,7 @@ The CLI walks you through:
 
 ```bash
 # Core dependencies
-npm install react-multistep-form react-hook-form @hookform/resolvers
+npm install react-form-steps react-hook-form @hookform/resolvers
 
 # Optional: Add Zod for schema validation
 npm install zod
@@ -86,7 +86,7 @@ npm install @react-native-async-storage/async-storage
 
 ```tsx
 // steps/PersonalInfo.tsx
-import { useFormSteps } from 'react-multistep-form';
+import { useFormSteps } from 'react-form-steps';
 
 export function PersonalInfo() {
   const { register, formState: { errors }, goBack, goNext } = useFormSteps();
@@ -124,7 +124,7 @@ export function PersonalInfo() {
 
 ```tsx
 // steps/AddressInfo.tsx
-import { useFormSteps } from 'react-multistep-form';
+import { useFormSteps } from 'react-form-steps';
 
 export function AddressInfo() {
   const { register, formState: { errors }, goBack } = useFormSteps();
@@ -164,7 +164,7 @@ export function AddressInfo() {
 
 ```tsx
 // App.tsx
-import { FormSteps, Step } from 'react-multistep-form';
+import { FormSteps, Step } from 'react-form-steps';
 import { PersonalInfo } from './steps/PersonalInfo';
 import { AddressInfo } from './steps/AddressInfo';
 
@@ -208,7 +208,7 @@ export default App;
 // steps/PersonalInfo.tsx
 import React from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
-import { useFormSteps } from 'react-multistep-form';
+import { useFormSteps } from 'react-form-steps';
 
 export function PersonalInfo() {
   const { setValue, watch, formState: { errors }, goNext } = useFormSteps();
@@ -270,7 +270,7 @@ const styles = StyleSheet.create({
 import React from 'react';
 import { SafeAreaView, ScrollView } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { FormSteps, Step } from 'react-multistep-form';
+import { FormSteps, Step } from 'react-form-steps';
 import { PersonalInfo } from './steps/PersonalInfo';
 import { AddressInfo } from './steps/AddressInfo';
 
@@ -344,7 +344,7 @@ const contactSchema = z.object({
 
 ### 📂 Automatic File Persistence
 
-Most libraries lose file uploads if the page refreshes. `react-multistep-form` automatically converts `File` and `FileList` objects into Base64 strings for storage, and restores them as real `File` objects when the user resumes.
+Most libraries lose file uploads if the page refreshes. `react-form-steps` automatically converts `File` and `FileList` objects into Base64 strings for storage, and restores them as real `File` objects when the user resumes.
 
 ```tsx
 // In your step component — just use a file input normally:
